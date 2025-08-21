@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  background-color:#16213e;
+  padding: 20px 50px;
+}
+
+h1, h2, .intro {
+  text-align: center;
+}
+
+h1 {
+  color: #ffcc00;
+  text-shadow: 0px 3px 8px rgba(255, 0, 110);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 58px;
+}
+
+h2 {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.intro {
+  font-family: 'Jersey 10', sans-serif;
+  color: #cfcfcf;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 24px;
+  margin: 30px 0px 50px 0px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  padding: 20px;
+}
+
+.game-container {
+  border-color: #16213e;
+  box-shadow: 0px 1px 8px rgba(255, 0, 110, 0.8);
+  border-radius: 8px;
+}
+
+.game-container p {
+  margin: 0px;
+  text-align: center;
+}
+
+.game-picture {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0px 20px 0px;
+}
+
+.game-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.game-description {
+  color: #cfcfcf;
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.play-btn {
+  background-color: #ffcc00;
+  font-family: 'Press Start 2P', sans-serif;
+  color: #252525;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 18px 32px;
+  cursor: pointer;
+  margin: 50px 0px 20px 0px;
+  transition: all 0.3s;
+}
+
+.play-btn:hover {
+  background-color: #ff006e;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.play-btn:active {
+  opacity: 0.4;
+}
+
+a {
+  text-decoration: none;
+}
