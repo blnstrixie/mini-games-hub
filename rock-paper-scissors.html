@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Rock, Paper, Scissors </title>
     <link rel="icon" type="img/png" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/021f2ffdd5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/rps.css">
   </head>
   <body>
     <h1> Rock, Paper, Scissors </h1>
+    <p class="instruction"> Guess the computer move </p>
 
     <div class="moves">
-      <button> Rock </button>
-      <button> Paper </button>
-      <button> Scissors </button>
+      <button class="rock">
+        <i class="fa-solid fa-hand-back-fist"></i>
+      </button>
+      <button class="paper">
+        <i class="fa-solid fa-hand"></i>
+      </button>
+      <button class="scissors">
+        <i class="fa-solid fa-hand-scissors"></i>
+      </button>
     </div>
 
-    <button> Reset score </button>
+    <button class="reset-btn">
+      Reset score 
+    </button>
   </body>
 </html>
