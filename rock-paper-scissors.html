@@ -8,24 +8,38 @@
     <script src="https://kit.fontawesome.com/021f2ffdd5.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles/rps.css">
+
+    <script src="js/rps.js" defer></script>
   </head>
   <body>
     <h1> Rock, Paper, Scissors </h1>
     <p class="instruction"> Guess the computer move </p>
 
     <div class="moves">
-      <button class="rock">
+      <button class="rock" onclick="playGame('Rock')">
         <i class="fa-solid fa-hand-back-fist"></i>
       </button>
-      <button class="paper">
+      <button class="paper" onclick="playGame('Paper')">
         <i class="fa-solid fa-hand"></i>
       </button>
-      <button class="scissors">
+      <button class="scissors" onclick="playGame('Scissors')">
         <i class="fa-solid fa-hand-scissors"></i>
       </button>
     </div>
 
-    <button class="reset-btn">
+    <div>
+      <p class="js-result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score"></p>
+    </div>
+
+    <button class="reset-btn" onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    restartGame();">
       Reset score 
     </button>
   </body>
