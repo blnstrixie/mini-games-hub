@@ -18,21 +18,24 @@ h1 {
   text-align: center;
 }
 
-.instruction {
+p {
   font-family: 'Jersey 10';
   color: #cfcfcf;
   font-size: 20px;
   text-align: center;
   letter-spacing: 2px;
   word-spacing: 5px;
-  margin-top: 5rem;
+}
+
+.instruction  {
+  margin-top: 2rem;
 }
 
 .moves {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin: 3rem 0 4rem 0;
+  margin: 3rem 0 3rem 0;
 }
 
 .moves button {
