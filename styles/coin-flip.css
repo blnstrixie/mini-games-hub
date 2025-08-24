@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+  background-color: #16213e;
+}
+
+h1 {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #ffcc00;
+  text-shadow: 0px 3px 8px rgba(255, 0, 110);
+  font-size: 55px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Jersey 10';
+  color: #cfcfcf;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.instruction  {
+  margin-top: 2rem;
+}
+
+.moves {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 3rem 0 3rem 0;
+}
+
+.moves button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.moves button:hover {
+  transform: scale(1.2);
+}
+
+.moves button:active {
+  opacity: 0.6;
+}
+
+.moves img {
+  height: 150px;
+}
+
+.reset-btn {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 12px;
+  background-color: #ffcc00;
+  color: #252525;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  margin: auto;
+  padding: 18px 32px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #ff006e;
+  color: #fff;
+}
+
+.reset-btn:active {
+  opacity: 0.4;
+}
