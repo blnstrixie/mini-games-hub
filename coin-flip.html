@@ -8,16 +8,18 @@
     <script src="https://kit.fontawesome.com/021f2ffdd5.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles/coin-flip.css">
+
+    <script src="js/coin-flip.js" defer></script>
   </head>
   <body>
     <h1> Flip a Coin </h1>
     <p class="instruction"> Guess the computer move </p>
 
     <div class="moves">
-      <button class="heads">
+      <button class="heads" onclick="coinFlip('Heads')">
         <img src="images/heads.png" alt="Coin heads">
       </button>
-      <button class="tails">
+      <button class="tails" onclick="coinFlip('Tails')">
         <img src="images/tails.png" alt="Coin tails">
       </button>
     </div>
@@ -28,7 +30,12 @@
       <p class="js-score"></p>
     </div>
 
-    <button class="reset-btn">
+    <button class="reset-btn" onclick="
+    score.wins = 0;
+    score.losses = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    restartGame();">
       Reset score 
     </button>
   </body>
